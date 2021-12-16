@@ -5,10 +5,10 @@
       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
       <script>
-         $(document).ready(function(){
+         $(function(){
            document.addEventListener('DOMContentLoaded', function () {
-              var frames = document.getElementById('frames');
-              frames.addEventListener('click', function (e) {
+              var slider = document.getElementById('sliders');
+              slider.addEventListener('click', function (e) {
                  if (e.target.classList.contains('item')) {
                    e.target.parentNode.scrollLeft = e.target.offsetLeft;
                  }
@@ -35,15 +35,15 @@
          </style>
          </head>
    <body>
-   <div class="myclass" id="frames">
-        <div class="item frames-item">demo1</div>
-        <div class="item frames-item">demo2</div>
-        <div class="item frames-item">demo3</div>
-        <div class="item frames-item">demo4</div>
-        <div class="item frames-item">demo5</div>
-        <div class="item frames-item">demo6</div>
-        <div class="item frames-item">demo7</div>
-        <div class="item frames-item">demo8</div>
+   <div class="myclass" id="sliders">
+        <div class="item slider-item">slider1</div>
+        <div class="item slider-item">slider2</div>
+        <div class="item slider-item">slider3</div>
+        <div class="item slider-item">slider4</div>
+        <div class="item slider-item">slider5</div>
+        <div class="item slider-item">slider6</div>
+        <div class="item slider-item">slider7</div>
+        <div class="item slider-item">slider8</div>
     </div>
    </body>
 	
