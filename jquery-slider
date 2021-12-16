@@ -1,0 +1,50 @@
+<html>
+   <head>
+	
+      <title>jQuery Scroll</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+      <script>
+         $(document).ready(function(){
+           document.addEventListener('DOMContentLoaded', function () {
+              var frames = document.getElementById('frames');
+              frames.addEventListener('click', function (e) {
+                 if (e.target.classList.contains('item')) {
+                   e.target.parentNode.scrollLeft = e.target.offsetLeft;
+                 }
+             });
+          });
+				
+         });
+      </script>
+		
+      <style>
+     
+        .myclass {
+            width: 300px;
+            display: flex;
+            position: relative; 
+            overflow-x: scroll;
+        }
+    
+        .item {
+            width: 400px;
+            background: #FFB563;
+            margin-right: 40px;
+        }
+         </style>
+         </head>
+   <body>
+   <div class="myclass" id="frames">
+        <div class="item frames-item">demo1</div>
+        <div class="item frames-item">demo2</div>
+        <div class="item frames-item">demo3</div>
+        <div class="item frames-item">demo4</div>
+        <div class="item frames-item">demo5</div>
+        <div class="item frames-item">demo6</div>
+        <div class="item frames-item">demo7</div>
+        <div class="item frames-item">demo8</div>
+    </div>
+   </body>
+	
+</html>
