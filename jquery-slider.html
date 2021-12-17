@@ -23,7 +23,6 @@ body *, body *:before, body *:after {
 
 .scroll-toggle {
   align-items: center;
-  background-color: var(--light);
   border: 2px solid var(--dark);
   display: flex;
   max-width: 680px;
@@ -34,22 +33,14 @@ body *, body *:before, body *:after {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 2px solid var(--dark);
   flex: 0 0 100px;
   margin: 10px;
   padding: 10px;
   position: relative;
   transition: all 0.1s ease;
 }
-.scroll-toggle-button:active, .scroll-toggle-button:hover {
-  background-color: var(--highlight);
-}
-.scroll-toggle-button:focus {
-  outline: 2px solid var(--highlight);
-}
+
 .scroll-toggle-list {
-  border-left: 2px solid var(--dark);
-  border-right: 2px solid var(--dark);
   display: flex;
   flex: 1 1 auto;
   overflow-x: scroll;
@@ -66,6 +57,8 @@ body *, body *:before, body *:after {
  
   <div class="scroll-toggle-button scroll-toggle-button-left"><img src="https://www.vaxvacationaccess.com/globalassets/suppliers/alg/images/adage/buttons/left-arrow-default.png" alt="Left Button"></div>
   <div class="scroll-toggle-button scroll-toggle-button-right">Scroll Right<img src="https://www.vaxvacationaccess.com/globalassets/suppliers/alg/images/adage/buttons/right-arrow-default.png" alt="Right Button"></div>
+
+  
   <ul class="scroll-toggle-list">
     <li class="scroll-toggle-list-item">Item #1</li>
     <li class="scroll-toggle-list-item">Item #2</li>

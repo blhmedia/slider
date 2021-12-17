@@ -1,0 +1,59 @@
+<html>
+
+
+    <style>  
+    
+        .algv-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px 0;
+        }
+
+        #slideLeft {
+            margin-right: 15px;
+        }
+    
+        #container {
+            display: flex;
+            flex-direction: column;
+            overflow-x: scroll;
+          }
+      
+          #content {
+            width: 593px;
+            background-color: #ccc;
+          }
+          
+          </style>
+<body>
+    <div class="algv-buttons">
+    <div id="slideLeft" type="button"><img src="https://www.vaxvacationaccess.com/globalassets/suppliers/alg/images/adage/buttons/left-arrow-default.png" alt="Left Button"></div>
+
+    <div id="slideRight" type="button"><img src="https://www.vaxvacationaccess.com/globalassets/suppliers/alg/images/adage/buttons/right-arrow-default.png" alt="Right Button"></div>
+
+</div>
+
+    <div id="container">
+        <div id="content">Click the buttons to slide horizontally! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem sapiente dignissimos fuga totam eligendi. Veritatis odio vel unde voluptas consectetur ex? Nesciunt voluptatibus omnis consequatur explicabo voluptas qui error.</div>
+    </div>
+
+    
+  
+
+
+    <script>
+
+    const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+      document.getElementById('container').scrollLeft += 20;
+    };
+
+    buttonLeft.onclick = function () {
+      document.getElementById('container').scrollLeft -= 20;
+    };
+
+    </script>
+</body>
+</html>
